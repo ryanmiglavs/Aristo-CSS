@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aristo in CSS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="An ongoing project to create the open-source Aristo theme purely in CSS, by Ryan Miglavs of A Socialist Pear." />
+	<link rel="stylesheet" href="css/aristo.css" type="text/css" />
+	<link rel="stylesheet" href="css/demo.css" type="text/css" />
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-9503594-4']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+<body>
+	<h1>Aristo</h1>
+	<h2>in pure CSS</h2>
+	<p>An ongoing project to create the open-source <a href="http://github.com/280north/aristo">Aristo theme</a> purely in <span class="caps">CSS</span>. No images, no extra markup. <a href="#more-info">More&nbsp;info&nbsp;↓</a></p>
+	<ul id="elements-list">
+		<li id="buttons">
+			<h3>Buttons</h3>
+			<p><button>More</button><button disabled="disabled">More</button></p>
+			<p><button class="default">More</button><button disabled="disabled">More</button></p>
+		</li>
+		<li id="checkboxes">
+			<h3>Checkboxes</h3>
+			<p>
+				<input id="buttons-checkbox" type="checkbox" name="buttons-checkbox" checked="checked" />
+				<label for="buttons-checkbox">Buttons</label>
+			</p>
+			<p>
+				<input id="sliders-checkbox" type="checkbox" name="sliders-checkbox" />
+				<label for="sliders-checkbox">Sliders</label>
+			</p>
+			<p>
+				<input id="scrollbars-checkbox" type="checkbox" name="scrollbars-checkbox" />
+				<label for="scrollbars-checkbox">Scrollbars</label>
+			</p>
+		</li>
+		<li id="radio-buttons">
+			<h3>Radio Buttons</h3>
+			<p>
+				<input id="pears-radio" type="radio" name="fruit" value="pears" checked="checked" />
+				<label for="pears-radio">Pears</label>
+			</p>
+			<p>
+				<input id="apples-radio" type="radio" name="fruit" value="apples" />
+				<label for="apples-radio">Apples</label>
+			</p>
+			<p>
+				<input id="oranges-radio" type="radio" name="fruit" value="oranges" />
+				<label for="oranges-radio">Oranges</label>
+			</p>
+		</li>
+		<li id="segmented-controls">
+			<h3>Segmented Controls</h3>
+			<p>
+				<input id="segment-a" class="segment" type="radio" name="segment" value="A" checked="checked" />
+				<label for="segment-a">A</label>
+				<input id="segment-b" class="segment" type="radio" name="segment" value="B" />
+				<label for="segment-b">B</label>
+				<input id="segment-c" class="segment" type="radio" name="segment" value="C" />
+				<label for="segment-c">C</label>
+			</p>
+		</li>
+		<li id="sliders">
+			<h3>Sliders (in progress)</h3>
+			<p>
+				<input type="range" name="slider_1" min="0" max="100" value="50" />
+				<input class="vertical" type="range" name="slider_2" min="0" max="100" value="50" />
+			</p>
+		</li>
+		<li id="pop-up-menus">
+			<h3>Pop-up Menus (in progress)</h3>
+			<p>
+				<select>
+					<option value="option_1">Option 1</option>
+					<option value="option_2">Option 2</option>
+				</select>
+			</p>
+		</li>
+		<!--<li id="scrollbars">
+			<h3>Scrollbars (currently WebKit-only)</h3>
+			<div class="light-scrollbars scroller">
+				<h4>Light Scrollbars</h4>
+				<div>&nbsp;</div>
+			</div>
+			<div class="dark-scrollbars scroller">
+				<h4>Dark Scrollbars</h4>
+				<div>&nbsp;</div>
+			</div>
+		</li>-->
+		<li id="coming-soon">
+			<h3>Coming Soon</h3>
+			<ul>
+				<li>Pop-up Menus: <em>almost complete!</em></li>
+				<!--<li>Scrollbars: <em>almost complete!</em></li>-->
+				<li>Sliders</li>
+				<li>Application Menus</li>
+			</ul>
+		</li>
+		<li id="more-info">
+			<h3>More Info</h3>
+			<p>Read the initial <a href="http://socialistpear.com/journal/aristo-buttons-in-css3/">blog post</a>.</p>
+			<p>I&rsquo;ll have more information (and more widgets) here soon.</p>
+			<p>By <a href="http://socialistpear.com">Ryan Miglavs</a> (<a href="http://twitter.com/ryanmiglavs">@ryanmiglavs</a>)</p>
+		</li>
+	</ul>
+	<div class="semantic floral-decoration">❦</div>
+</body>
+</html>

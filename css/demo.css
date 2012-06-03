@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	}
+body {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 1em;
+	color: #666;
+	}
+h1 {
+	margin: 0;
+	font-family: Arial, sans-serif; /* Barf. It's what Sofa chose. I'm sure they had good reason. */
+	font-size: 350%;
+	line-height: .9;
+	color: #1a1a1a;
+	text-transform: uppercase;
+	}
+h2 {
+	margin-bottom: 1em;
+	color: #888;
+	font-size: 150%;
+	}
+h3 {
+	margin: 1em 0 1.5em 0;
+	padding: .5em 0;
+	color: #d6d6d6;
+	font-weight: normal;
+	font-size: 85%;
+	border-bottom: 1px solid;
+	}
+	/*h3:before {
+		font-size: 200%;
+		line-height: 0;
+		content: "☙ ";
+		}*/
+a:link {
+	color: #90bdd5;
+	text-decoration: none;
+	border-bottom: 1px solid #d1e9f6;
+	}
+a:visited {
+	color: #cf7bff;
+	text-decoration: none;
+	border-bottom: 1px solid #d1e9f6;
+	}
+a:hover {
+	color: #5299c0;
+	}
+a:active {
+	color: #006ac8;
+	}
+p {
+	margin-bottom: 1em;
+	}
+ul {
+	
+	}
+	ul li {
+		/*display: block;*/
+		/*min-height: 1em;*/
+		margin-bottom: 1em;
+		}
+ul#elements-list {
+	list-style: none;
+	}
+	ul#elements-list li {
+		clear: both;
+		}
+		ul#elements-list li ul {
+			padding-left: 1.5em;
+			list-style-position: outside;
+			}
+			ul#elements-list li ul li {
+				padding-left: .55em;
+				color: #999;
+				font-size: 85%;
+				}
+		ul#elements-list li#checkboxes,
+		ul#elements-list li#radio-buttons {
+			clear: none;
+			float: left;
+			width: 50%;
+			}
+		ul#elements-list li#segmented-controls {
+			
+			}
+			ul#elements-list li#segmented-controls p {
+				overflow: hidden;
+				}
+.scroller {
+	position: relative;
+	float: left;
+	width: 16em;
+	height: 16em;
+	margin: 0 2em 2em 0;
+	background: #f6f6f6;
+	overflow: scroll;
+	outline: 1px solid #bbb;
+	}
+	.scroller h4 {
+		position: absolute;
+		top: 30%;
+		left: 20%;
+		text-transform: uppercase;
+		color: #bebebe;
+		font-size: 90%;
+		font-weight: normal;
+		text-shadow: 1px 1px 0 #fff;
+		}
+	.scroller div {
+		width: 22em;
+		height: 22em;
+		}
+.floral-decoration {
+	padding: 3em 0 .75em 0;
+	text-align: center;
+	font-size: 300%;
+	}

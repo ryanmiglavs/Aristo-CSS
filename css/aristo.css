@@ -1,0 +1,517 @@
+body {
+	font-family: "Lucida Grande", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+	}
+p {
+	
+	}
+/* @group Buttons */
+button {
+	position: relative;
+	margin: 0 1em .5em 0;
+	padding: .15em 1em;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4f4f4f;
+	text-shadow: 0 1px 1px #fff;
+	background: #ddd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#c4c4c4));
+	background: -moz-linear-gradient(top, #ededed, #c4c4c4);
+	border: 1px solid #acacac;
+	border-top-color: #bdbdbd;
+	border-bottom-color: #949494;
+	border-radius: .214em;
+	-webkit-border-radius: .214em;
+	-moz-border-radius: .214em;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	}
+	/*button:after {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 0;
+		content: " ";
+		border-bottom: 1px solid rgba(255,255,255,0.5);
+		}*/
+	button:hover,
+	button:focus {
+		box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.5);
+		-webkit-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.5);
+		-moz-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.5);
+		}
+	button:active {
+		background: #ccc;
+		background: -webkit-gradient(linear, left top, left bottom, from(#c3c3c3), to(#ebebeb));
+		background: -moz-linear-gradient(top, #c3c3c3, #ebebeb);
+		border-color: #a6a6a6;
+		border-top-color: #939393;
+		border-bottom-color: #bcbcbc;
+		box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+		-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+		-moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+		}
+		/*button:active:after {
+			top: 100%;
+			margin-top: -1px;
+			border-top: 1px solid rgba(255,255,255,0.5);
+			}*/
+button.default {
+	color: #1c4257;
+	background: #a3cde3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b9e0f5), to(#85b2cb));
+	background: -moz-linear-gradient(top, #b9e0f5, #85b2cb);
+	border: 1px solid #759bb1;
+	border-top-color: #8ab0c6;
+	border-bottom-color: #587e93;
+	}
+	button.default:hover,
+	button.default:focus {
+		box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 rgba(255,255,255,0.5);
+		-webkit-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 rgba(255,255,255,0.5);
+		-moz-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 rgba(255,255,255,0.5);
+		}
+	button.default:active {
+		background: #8abcd7;
+		background: -webkit-gradient(linear, left top, left bottom, from(#81afc8), to(#b7def4));
+		background: -moz-linear-gradient(top, #81afc8, #b7def4);
+		border-color: #6e94a9;
+		border-top-color: #567c91;
+		border-bottom-color: #88aec4;
+		box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+		-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+		-moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+		}
+button[disabled],
+button[disabled]:active {
+	color: #a7a7a7;
+	background: #efefef;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e1e1e1));
+	background: -moz-linear-gradient(top, #f6f6f6, #e1e1e1);
+	border-color: #d4d4d4;
+	border-top-color: #dedede;
+	border-bottom-color: #c9c9c9;
+	cursor: default;
+	}
+	button[disabled]:hover,
+	button[disabled]:focus {
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		}
+/* @end */
+/* @group Drop-down Menu (select) */
+select {
+	position: relative;
+	margin: 0 1em .5em 0;
+	padding: .35em 3em .35em 1em;
+	font-size: 14px;
+	font-weight: bold;
+	color: #464545;
+	text-shadow: 0 1px 1px #fff;
+	-webkit-appearance: none;
+	background-color: #eee;
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, from(#e3f3fc), to(#e3f3fc)), /* 1px blue highlight */
+		-webkit-gradient(linear, left top, left bottom, from(#345d75), to(#345d75)), /* Triangle */
+		-webkit-gradient(linear, left top, left bottom, from(#b9e0f5), to(#83b0ca)), /* Blue gradient */
+		-webkit-gradient(linear, left top, left bottom, from(#a8a8a8), to(#a8a8a8)), /* Center border */
+		-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)), /* 1px white highlight */
+		-webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#cccccc)); /* Gray gradient */
+	background-position: right top, 90% center, right top, right top, left top, left top; /* The 90% position (from the left) is bad if the select gets large from a large option. CSS can't position from the right. */
+	background-size: 2em 1px, .5em .5em, 2em 100%, 2.1em 100%, 100% 1px, 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #a8a8a8;
+	border-top-color: #bdbdbd;
+	border-bottom-color: #949494;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	}
+/* @end */
+/* @group Checkboxes & Radio Buttons */
+input[type="checkbox"],
+input[type="radio"] {
+	display: none;
+	}
+	input[type="checkbox"] + label,
+	input[type="radio"] + label {
+		/* UNCHECKED */
+		position: relative;
+		display: block;
+		width: 1em;
+		height: 1em;
+		text-indent: 2em;
+		font-size: 85%;
+		font-weight: bold;
+		line-height: 1;
+		background: #ddd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#c4c4c4));
+		background: -moz-linear-gradient(top, #ededed, #c4c4c4);
+		border: 1px solid #acacac;
+		border-top-color: #bdbdbd;
+		border-bottom-color: #949494;
+		border-radius: .25em;
+		-webkit-border-radius: .25em;
+		-moz-border-radius: .25em;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+		overflow: visible;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		}
+		input[type="checkbox"] + label::before {
+			/* UNCHECKED - placeholder for checkmark (plus clickspace) */
+			display: block;
+			position: absolute;
+			left: .05em;
+			top: -.3em;
+			width: 1.75em;
+			height: 1.2em;
+			color: #345d75;
+			text-indent: 0;
+			font-size: 130%;
+			content: " ";
+			}
+		input[type="checkbox"] + label:active,
+		input[type="radio"] + label:active {
+			/* PRESSED (unchecked) */
+			background: #ccc;
+			background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#bbb));
+			background: -moz-linear-gradient(top, #ddd, #bbb);
+			}
+		input[type="checkbox"]:checked + label {
+			/* CHECKED */
+			background: #a3cde3 /*url(../img/checkbox-check.png) no-repeat 2px -1px*/;
+			background: /*url(../img/checkbox-check.png) no-repeat 2px -1px,*/ -webkit-gradient(linear, left top, left bottom, from(#b9e0f5), to(#85b2cb));
+			background: /*url(../img/checkbox-check.png) no-repeat 2px -1px,*/ -moz-linear-gradient(top, #b9e0f5, #85b2cb);
+			border: 1px solid #759bb1;
+			border-top-color: #8ab0c6;
+			border-bottom-color: #587e93;
+			}
+			input[type="checkbox"]:checked + label:before {
+				/* CHECKED - the checkmark */
+				content: "✓";
+				}
+		input[type="checkbox"]:checked + label:active {
+			/* PRESSED (checked) */
+			background: #8aadc0 url(../img/checkbox-check.png) no-repeat 2px -1px;
+			background: /*url(../img/checkbox-check.png) no-repeat 2px -1px,*/ -webkit-gradient(linear, left top, left bottom, from(#94bacf), to(#7e9eb0));
+			background: /*url(../img/checkbox-check.png) no-repeat 2px -1px,*/ -moz-linear-gradient(top, #94bacf, #7e9eb0);
+			}
+input[type="radio"] {
+	
+	}
+	input[type="radio"] + label {
+		/* UNCHECKED */
+		border-color: #999;
+		border-radius: .75em;
+		-webkit-border-radius: .75em;
+		-moz-border-radius: .75em;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.5);
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,0.5);
+		-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.5);
+		}
+		input[type="radio"] + label::before {
+			display: block;
+			position: absolute;
+			left: .325em;
+			top: 0;
+			width: 2.5em;
+			height: 1.5em;
+			font-size: 80%;
+			text-indent: 0;
+			content: " ";
+			}
+		input[type="radio"]:checked + label {
+			/* CHECKED */
+			border-color: #759bb1;
+			background: #a3cde3 /*url(../img/radio-check.png) no-repeat center*/;
+			background: /*url(../img/radio-check.png) no-repeat center,*/ -webkit-gradient(linear, left top, left bottom, from(#b9e0f5), to(#85b2cb));
+			background: /*url(../img/radio-check.png) no-repeat center,*/ -moz-linear-gradient(top, #b9e0f5, #85b2cb);
+			}
+			input[type="radio"]:checked + label:before {
+				display: block;
+				position: absolute;
+				left: .325em;
+				top: 0;
+				width: 2.5em;
+				height: 1.5em;
+				color: #345d75;
+				font-size: 80%;
+				text-indent: 0;
+				content: "•";
+				}
+		input[type="radio"]:checked + label:active {
+			/* PRESSED (checked) */
+			background: #8aadc0 url(../img/radio-check.png) no-repeat center;
+			background: url(../img/radio-check.png) no-repeat center, -webkit-gradient(linear, left top, left bottom, from(#94bacf), to(#7e9eb0));
+			background: url(../img/radio-check.png) no-repeat center, -moz-linear-gradient(top, #94bacf, #7e9eb0);
+			}
+/* @end */
+/* @group Segmented Controls */
+input[type="radio"].segment {
+	/* still display:none */
+	}
+	input[type="radio"].segment + label {
+		float: left;
+		width: auto;
+		height: auto;
+		margin: 0 -1px 0 0;
+		padding: .15em 1em;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: normal;
+		text-indent: 0;
+		color: #4f4f4f;
+		text-shadow: 0 1px 1px #fff;
+		background: #ddd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#c4c4c4));
+		background: -moz-linear-gradient(top, #ededed, #c4c4c4);
+		border: 1px solid #acacac;
+		border-top-color: #bdbdbd;
+		border-bottom-color: #949494;
+		border-radius: 0;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+		transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		}
+		input[type="radio"].segment + label::before {
+			display: none;
+			}
+		input[type="radio"].segment:first-of-type + label {
+			border-top-left-radius: .214em;
+			border-bottom-left-radius: .214em;
+			}
+		input[type="radio"].segment:last-of-type + label {
+			border-top-right-radius: .214em;
+			border-bottom-right-radius: .214em
+			}
+		input[type="radio"].segment:checked + label {
+			color: #1c4257;
+			background: #a3cde3;
+			background: -webkit-gradient(linear, left top, left bottom, from(#b9e0f5), to(#85b2cb));
+			background: -moz-linear-gradient(top, #b9e0f5, #85b2cb);
+			border: 1px solid #759bb1;
+			border-top-color: #8ab0c6;
+			border-bottom-color: #587e93;
+			z-index: 2;
+			}
+		input[type="radio"].segment + label:active {
+			background: #ccc;
+			background: -webkit-gradient(linear, left top, left bottom, from(#c3c3c3), to(#ebebeb));
+			background: -moz-linear-gradient(top, #c3c3c3, #ebebeb);
+			border-color: #a6a6a6;
+			border-top-color: #939393;
+			border-bottom-color: #bcbcbc;
+			box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+			-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+			-moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+			}
+			input[type="radio"].segment:checked + label:active {
+				background: #8abcd7;
+				background: -webkit-gradient(linear, left top, left bottom, from(#81afc8), to(#b7def4));
+				background: -moz-linear-gradient(top, #81afc8, #b7def4);
+				border-color: #6e94a9;
+				border-top-color: #567c91;
+				border-bottom-color: #88aec4;
+				box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+				-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+				-moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5);
+				}
+/* @end */
+/* @group Scrollbars */
+::-webkit-scrollbar {
+	width: 17px;
+	height: 17px;
+	}
+	::-webkit-scrollbar:vertical {
+		
+		}
+		.light-scrollbars::-webkit-scrollbar:vertical {
+			
+			}
+	::-webkit-scrollbar:horizontal {
+		
+		}
+		.light-scrollbars::-webkit-scrollbar:horizontal {
+			
+			}
+::-webkit-scrollbar-track {
+	-webkit-border-radius: 9px;
+	}
+	::-webkit-scrollbar-track:vertical {
+		margin: -6px 0;
+		background: -webkit-gradient(linear, left top, 11 top, from(#ccc), to(#fff));
+		-webkit-box-shadow: inset 1px 0 3px rgba(10,10,10,0.5);
+		}
+		.light-scrollbars::-webkit-scrollbar-track:vertical {
+			background: -webkit-gradient(linear, left top, right top, from(#ababab), to(#c6c6c6));
+			}
+	::-webkit-scrollbar-track:horizontal {
+		margin: 0 -6px;
+		background: -webkit-gradient(linear, left top, left 11, from(#ccc), to(#fff));
+		-webkit-box-shadow: inset 0 1px 3px rgba(10,10,10,0.5);
+		}
+		.light-scrollbars::-webkit-scrollbar-track:horizontal {
+			background: -webkit-gradient(linear, left top, left bottom, from(#ababab), to(#c6c6c6));
+			}
+::-webkit-scrollbar-button {
+	
+	}
+	::-webkit-scrollbar-button:vertical {
+		width: 17px;
+		height: 22px;
+		border-left: 1px solid #ccc;
+		}
+		::-webkit-scrollbar-button:vertical:decrement {
+			background: url(../img/scroll-triangle-up.png) no-repeat left 6px, -webkit-gradient(linear, left top, right top, from(#fff), to(#dfdfdf));
+			}
+			.light-scrollbars::-webkit-scrollbar-button:vertical:decrement {
+				background: url(../img/scroll-triangle-up.png) no-repeat left 6px, -webkit-gradient(linear, left top, 15 top, from(#ddd), to(#f1f1f1));
+				}
+			::-webkit-scrollbar-button:vertical:decrement:active {
+				background: url(../img/scroll-triangle-up.png) no-repeat right 6px, -webkit-gradient(linear, left top, right top, from(#bcc2c8), to(#81888f));
+				}
+		::-webkit-scrollbar-button:vertical:increment {
+			background: url(../img/scroll-triangle-down.png) no-repeat left 13px, -webkit-gradient(linear, left top, right top, from(#fff), to(#dfdfdf));
+			}
+			.light-scrollbars::-webkit-scrollbar-button:vertical:increment {
+				background: url(../img/scroll-triangle-down.png) no-repeat left 13px, -webkit-gradient(linear, left top, 15 top, from(#ddd), to(#f1f1f1));
+				}
+			::-webkit-scrollbar-button:vertical:increment:active {
+				background: url(../img/scroll-triangle-down.png) no-repeat right 13px, -webkit-gradient(linear, left top, right top, from(#bcc2c8), to(#81888f));
+				}
+		::-webkit-scrollbar-button:vertical:start {
+			
+			}
+			::-webkit-scrollbar-button:vertical:start:decrement {
+				/* SCROLL UP button on top */
+				
+				}
+			::-webkit-scrollbar-button:vertical:start:increment {
+				/* SCROLL DOWN button on top */
+				height: 28px;
+				border-top: 1px solid #ccc;
+				}
+		::-webkit-scrollbar-button:vertical:end {
+			
+			}
+			::-webkit-scrollbar-button:vertical:end:decrement {
+				/* SCROLL UP button on bottom */
+				height: 28px;
+				border-bottom: 1px solid #ccc;
+				}
+			::-webkit-scrollbar-button:vertical:end:increment {
+				/* SCROLL DOWN button on bottom */
+				
+				}
+	::-webkit-scrollbar-button:horizontal {
+		width: 22px;
+		height: 17px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dfdfdf));
+		border-top: 1px solid #ddd;
+		}
+		::-webkit-scrollbar-button:horizontal:active {
+			background: -webkit-gradient(linear, left top, left bottom, from(#bcc2c8), to(#81888f));;
+			}
+		.light-scrollbars::-webkit-scrollbar-button:horizontal {
+			background: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#f1f1f1));
+			}
+		::-webkit-scrollbar-button:horizontal:start {
+			/*background: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#f1f1f1));*/
+			}
+		::-webkit-scrollbar-button:horizontal:end {
+			/*background: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#f1f1f1));*/
+			}
+		::-webkit-scrollbar-button:horizontal:decrement {
+			/* SCROLL LEFT button */
+			
+			}
+		::-webkit-scrollbar-button:horizontal:increment {
+			/* SCROLL RIGHT button */
+			background: url(../img/scroll-triangle-right.png) no-repeat 13px top, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dfdfdf));
+			}
+			.light-scrollbars::-webkit-scrollbar-button:horizontal:increment {
+				
+				}
+			::-webkit-scrollbar-button:horizontal:increment:active {
+				background: url(../img/scroll-triangle-right.png) no-repeat 13px bottom, -webkit-gradient(linear, left top, left bottom, from(#bcc2c8), to(#81888f));
+				}
+		::-webkit-scrollbar-button:horizontal:decrement {
+			/* SCROLL RIGHT button */
+			background: url(../img/scroll-triangle-left.png) no-repeat 6px top, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dfdfdf));
+			}
+			.light-scrollbars::-webkit-scrollbar-button:horizontal:decrement {
+				
+				}
+			::-webkit-scrollbar-button:horizontal:decrement:active {
+				background: url(../img/scroll-triangle-left.png) no-repeat 6px bottom, -webkit-gradient(linear, left top, left bottom, from(#bcc2c8), to(#81888f));
+				}
+::-webkit-scrollbar-thumb {
+	background: #ccc;
+	-webkit-border-radius: 9px;
+	}
+	::-webkit-scrollbar-thumb:vertical {
+		border: 1px solid #777d83;
+		border-right-color: #434b52;
+		border-left-color: #9ea1a6;
+		background: -webkit-gradient(linear, left top, right top, from(#bcc2c8), to(#81888f));
+		-webkit-box-shadow: inset 1px 0 1px rgba(255,255,255,0.5);
+		}
+		.light-scrollbars::-webkit-scrollbar-thumb:vertical {
+			border: 2px solid #b8b8b8;
+			border-left-color: #8f8f8f;
+			border-right-color: #b7b7b7;
+			background: -webkit-gradient(linear, left top, right top, from(#f8f8f8), to(#e1e1e1));
+			-webkit-box-shadow: inset 2px 2px 0px rgba(255,255,255,0.5);
+			}
+	::-webkit-scrollbar-thumb:horizontal {
+		border: 1px solid #777d83;
+		border-bottom-color: #434b52;
+		border-top-color: #9ea1a6;
+		background: -webkit-gradient(linear, left top, left bottom, from(#bcc2c8), to(#81888f));
+		-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
+		}
+		.light-scrollbars::-webkit-scrollbar-thumb:horizontal {
+			border: 2px solid #b8b8b8;
+			border-top-color: #8f8f8f;
+			border-bottom-color: #b7b7b7;
+			background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e1e1e1));
+			}
+::-webkit-scrollbar-corner {
+	background: #fff;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	}
+/* @end */
