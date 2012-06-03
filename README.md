@@ -19,6 +19,7 @@ I set some important design constraints, and I've been accepting no compromises:
 * **Stupid simple deployment, with one file.** Using the theme should be as easy as including a single CSS file.
 * **No extra classes or changes to markup,** so Aristo CSS uses generic element selectors.
 * **Follow the original Aristo docs**, but add **special touches where appropriate**.
+* **Sized in ems**, so the widgets are typographically-appropriate, easily-resized, and adaptible to many situations.
 
 These kind of simple rules are what guide my front-end work in general, but I typically leave a little wiggle room for practicality. For Aristo CSS, I decided I would jump through whatever hoops necessary to stick to these rules strictly.
 
